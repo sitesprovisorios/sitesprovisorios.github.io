@@ -25,11 +25,52 @@ h1, h2, h3, h4, h5, h6 {
   color: #000; }
 
 .text-black {
-  color: #000 !important; }
+  color: #fff !important; }
 
 .bg-black {
   background: #000 !important; }
 
+  .bg-light {
+    background: #b90729 !important;
+  }
+  .mb-5 {
+    color: #fff;
+  }
+
+  .units--result {
+    box-shadow:2px 2px 5px 2px rgba(0,0,0,.2);
+    padding-bottom: 25px;
+    border-radius: 20px;
+    padding-top: 10px;
+   }
+   .units--result .result__info p {
+    letter-spacing:-.5px;
+    line-height:1.2em;
+    font-size:.95em;
+    margin:0
+   }
+   .units--result h4 a:link,
+   .units--result h4 a:visited {
+    font-size:1em;
+    line-height:1.2em;
+    color:#01b2e4
+   }
+   .units--result h4 a:active,
+   .units--result h4 a:hover {
+    color:#337ab7;
+    text-decoration:none!important
+   }
+   .units {
+    padding:50px 0
+   }
+   .units .subtitle {
+    margin-bottom:50px
+   }
+
+   .address-info {
+     text-transform: uppercase;
+   }
+   
 .site-wrap:before {
   -webkit-transition: .3s all ease-in-out;
   -o-transition: .3s all ease-in-out;
@@ -480,6 +521,7 @@ padding-top: 160px;
     @media (min-width: 768px) {
       .titulo {
         position: relative;
+        
 
       } }
       @media (min-width: 400px) {
@@ -488,11 +530,7 @@ padding-top: 160px;
           
         } }
 
-    #home-section
-    {
-      position: relative;
-      height: 100%;
-    }
+    
 
    
 /* Blocks */
@@ -500,7 +538,8 @@ padding-top: 160px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+height: 677px; }
   .site-blocks-cover.overlay {
     position: relative; }
     .site-blocks-cover.overlay:before {
@@ -511,19 +550,26 @@ padding-top: 160px;
       right: 0;
       top: 0;
       background: rgba(0, 0, 0, 0.4); }
-  .site-blocks-cover, .site-blocks-cover .row {
+  .site-blocks-cover, .site-blocks-cover .row 
     
     
-    @media (min-width: 768px) {
-      .site-blocks-cover, .site-blocks-cover .row {
+    @media (max-width: 768px) {
+      .site-blocks-cover {
         position: relative;
-
+        height: 677px;
       } }
-      @media (min-width: 400px) {
-        .site-blocks-cover, .site-blocks-cover .row {
+      @media (max-width: 400px) {
+        .site-blocks-cover {
           position: relative;
+          height: 277px;
           
         } }
+        @media (max-width: 420px) {
+          .site-blocks-cover {
+            position: relative;
+            height: 277px;
+            
+          } }
   .site-blocks-cover.inner-page, .site-blocks-cover.inner-page .row {
     min-height: 600px;
     height: calc(80vh); }
