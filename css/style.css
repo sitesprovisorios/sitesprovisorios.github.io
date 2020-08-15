@@ -640,7 +640,7 @@ and (-webkit-device-pixel-ratio : 3){.row-lojas {
     -o-transition: .3s all ease;
     transition: .3s all ease; }
   .sticky-wrapper.is-sticky .site-navbar {
-    background-color: #b80729;
+    background-color: #;
     -webkit-box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.6);
     box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.6); }
 
@@ -677,7 +677,6 @@ padding-top: 160px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  background-attachment: fixed;
 height: 677px; }
   
 .site-blocks-cover.overlay {
