@@ -37,18 +37,111 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
   }
 
+  .text-red {
+    color: #b90729;
+  }
+
   .units--result {
     box-shadow:2px 2px 5px 2px rgba(0,0,0,.2);
     padding-bottom: 25px;
     border-radius: 20px;
     padding-top: 10px;
+    width: 700px;
    }
+
+     
+   @media (max-width: 768px) {
+    .units--result .row{
+      position: relative;
+      height: 650px;
+      width: 677px;
+      padding-right: 0px;
+      padding-left: 0px;
+    } }
+    @media (max-width: 400px) {
+      .units--result {
+        position: relative;
+        height: 300px;
+        width: 677px;
+        padding-right: 0px;
+        padding-left: 0px;
+        margin:0;
+
+      } }
+      @media (max-width: 420px) {
+        .units--result {
+          position: relative;
+          height: 300px;
+          width: 677px;
+          padding-right: 0px;
+          padding-left: 0px;
+          margin:0;
+        } }
+        @media (max-width: 420px) {
+          .units--result {
+            position: relative;
+            height: 300px;
+            width: 677px;
+            padding-right: 0px;
+            padding-left: 0px;
+            margin:0;
+
+          } }
+
+          @media (max-width: 370px) {
+            .units--result {
+              position: relative;
+              height: 300px;
+              width: 677px;
+              padding-right: 0px;
+              padding-left: 0px;
+              margin:0;
+
+            } }
+            @media (max-width: 768px) {
+              .row {
+              display: table-cell      } }
+              @media (max-width: 400px) {
+                .row {
+                  display: table-cell      } }
+                @media (max-width: 420px) {
+                  .row {
+                    display: table-cell      } }
+                  @media (max-width: 420px) {
+                    .row {
+                      display: table-cell      } }
+                    @media (max-width: 370px) {
+                      .row {
+                        display: table-cell      } }
    .units--result .result__info p {
     letter-spacing:-.5px;
     line-height:1.2em;
     font-size:.95em;
     margin:0
    }
+
+   @media screen and (max-width: 420px) {
+    #contact-section {
+        display: none; //propriedades css
+    }
+}
+
+@media screen and (max-width: 480px) {
+  #contact-section {
+      display: none; //propriedades css
+  }
+}@media screen and (max-width: 768px) {
+  #contact-section {
+      display: none; //propriedades css
+  }
+}
+
+
+
+@media screen and (max-width: 380px) {
+  #contact-section {
+      display: none; //propriedades css
+  }}
    .units--result h4 a:link,
    .units--result h4 a:visited {
     font-size:1em;
@@ -70,6 +163,8 @@ h1, h2, h3, h4, h5, h6 {
    .address-info {
      text-transform: uppercase;
    }
+
+   .col-md-6 result__info
    
 .site-wrap:before {
   -webkit-transition: .3s all ease-in-out;
@@ -540,7 +635,8 @@ padding-top: 160px;
   background-position: top;
   background-attachment: fixed;
 height: 677px; }
-  .site-blocks-cover.overlay {
+  
+.site-blocks-cover.overlay {
     position: relative; }
     .site-blocks-cover.overlay:before {
       position: absolute;
@@ -556,18 +652,18 @@ height: 677px; }
     @media (max-width: 768px) {
       .site-blocks-cover {
         position: relative;
-        height: 677px;
+        height: 650px;
       } }
       @media (max-width: 400px) {
         .site-blocks-cover {
           position: relative;
-          height: 277px;
+          height: 250px;
           
         } }
         @media (max-width: 420px) {
           .site-blocks-cover {
             position: relative;
-            height: 277px;
+            height: 250px;
             
           } }
   .site-blocks-cover.inner-page, .site-blocks-cover.inner-page .row {
@@ -591,7 +687,7 @@ height: 677px; }
       .site-blocks-cover h1 a:hover {
         color: #b80729; }
     @media (min-width: 768px) {
-      .site-blocks-cover h1 {
+      h1 {
         font-size: 44px;
         padding-right: 500px;
       } }
@@ -624,6 +720,8 @@ height: 677px; }
       -ms-transform: translateY(-100%);
       transform: translateY(-100%); } }
 
+
+      
 .site-block-appointment form, .bg-light form {
   border-radius: 10px;
   -webkit-box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.05);
@@ -1249,7 +1347,9 @@ height: 677px; }
 .block-25 ul li a .image {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 90px;
-  flex: 0 0 90px; }
+  flex: 0 0 90px; 
+  float: right;
+}
   .block-25 ul li a .image img {
     border-radius: 4px;
     max-width: 100%;
